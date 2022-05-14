@@ -25,9 +25,9 @@
       <div class="flex space-x-4 justify-center mt-10">
         <Button
           size="lg"
-          text="Nuxt 3"
+          text="Scripts"
           class="font-extrabold"
-          href="https://v3.nuxtjs.org"
+          href="/scripts"
         />
         <Button
           size="lg"
