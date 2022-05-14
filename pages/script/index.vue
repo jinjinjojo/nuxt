@@ -1,12 +1,28 @@
-<template>
-  <div>
-    <ul v-for="mountain in mountains" :key="mountain.id">
-      <NuxtLink :to="`${mountain.continent.toLowerCase()}/${mountain.slug}`">
-        <li>{{ mountain.title }}</li>
-      </NuxtLink>
-    </ul>
-  </div>
+ <template>
+  <PageWrapper>
+    <PageHeader>
+      <PageTitle :text="$t('pages.dashboard.index.title')" class="capitalize" />
+    </PageHeader>
+    <PageBody>
+      <PageSection>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia autem
+          debitis ab dolorum tempore placeat possimus perferendis porro sit aut
+          nobis quasi hic consequuntur, atque impedit nihil totam illo odit?
+        </p>
+      </PageSection>
+      <PageSection>
+        {{mountains}}
+      </PageSection>
+    </PageBody>
+  </PageWrapper>
 </template>
+
+<script lang="ts" setup>
+definePageMeta({
+  layout: 'page',
+})
+</script>
 <script>
 export default {
   async asyncData() {
