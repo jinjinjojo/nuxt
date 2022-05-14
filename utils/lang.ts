@@ -14,11 +14,11 @@ export const availableLocales: ILocales = {
     iso: 'en',
     flag: '🇺🇸',
   },
-  ja: {
-    name: '日本語',
-    iso: 'ja',
-    flag: '🇯🇵',
-  },
+  // ja: {
+  //   name: '日本語',
+  //   iso: 'ja',
+  //   flag: '🇯🇵',
+  // },
 }
 
 export function LanguageManager() {
