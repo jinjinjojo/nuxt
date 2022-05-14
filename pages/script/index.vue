@@ -18,12 +18,8 @@
   </PageWrapper>
 </template>
 
-<script lang="ts" setup>
-definePageMeta({
-  layout: 'page',
-})
-</script>
 <script>
+
 export default {
   async asyncData() {
     const mountains = await fetch(
